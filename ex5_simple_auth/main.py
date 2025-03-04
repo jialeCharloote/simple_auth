@@ -96,4 +96,5 @@ async def clerk_auth_middleware(request: Request, call_next):
 
 
 # Mount the "main" directory to serve static files (including index.html, login.html, etc.)
-app.mount("/", StaticFiles(directory="./ex5_simple_auth/main", html=True), name="main")
+# app.mount("/", StaticFiles(directory="./ex5_simple_auth/main", html=True), name="main")
+app.mount("/", StaticFiles(directory="./main", html=True), name="main")
